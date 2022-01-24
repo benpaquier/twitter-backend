@@ -30,7 +30,7 @@ app.use(express.static('public'))
 
 app.use(session({
   secret: "secret",
-  resave: false,
+  resave: true,
   saveUninitialized: false
 }))
 
